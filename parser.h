@@ -30,7 +30,15 @@ config_option_t read_config_file(char* path) {
             if (feof(fp)) {
                 break;
             }
+            if (co->key[0] == '#') {
+                while (fgetc(fp) != '\n') {
+                    // Do nothing (to move the cursor to the end of the line).
+                }
+                free(co);
+                continue;
+            }
             perror("fscanf()");
+            free(co);
             continue;
         }
         //printf("Key: %s\nValue: %s\n", co->key, co->value);
