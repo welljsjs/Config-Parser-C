@@ -1,3 +1,5 @@
+#define CONFIG_ARG_MAX_BYTES 128
+
 typedef struct config_option config_option;
 typedef config_option* config_option_t;
 
