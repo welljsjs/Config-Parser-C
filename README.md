@@ -1,6 +1,21 @@
 # Config-Parser-C
 Simple implemented Config-file parser written in C
 
+
+For information about how to use this code, [have a look at the docs](https://welljsjs.github.io/Config-Parser-C/) or see below.
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 1. General Information
 All functions, variables, macros are included within the header file "parser.h".
 The `char* path` argument/parameter is the path to the config file. 
