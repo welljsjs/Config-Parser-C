@@ -6,7 +6,7 @@ All functions, variables, macros are included within the header file "parser.h".
 The `char* path` argument/parameter is the path to the config file. 
 
 ### 2. Example of a configuration file: 
-```cfg
+```conf
 port             =       80
 max_clients      =       100 
 # This is a single-line comment...
@@ -19,7 +19,7 @@ max_arg_length   =       256
 As you can see, configuration files may include single-line comments starting with a hashtag (`#`). All lines starting with this character are ignored, so you can write anything after this character (no space etc. is needed). If you need to write a multiline-comment, this can easily be done by writing a hashtag at the beginning of every line.
 
 In your `main.c` program, you now can call the function as following: 
-```C
+```c
 config_option_t co;
     if ((co = read_config_file("/Users/your_path_to_config_file/example.conf")) == NULL) {
         perror("read_config_file()");
