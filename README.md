@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/welljsjs/Config-Parser-C.svg?branch=master)](https://travis-ci.org/welljsjs/Config-Parser-C)
+
 # Config-Parser-C
 Simple implemented Config-file parser written in C
 
